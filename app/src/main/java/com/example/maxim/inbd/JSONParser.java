@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 
 
-class JSONParser extends AsyncTask<Void, Void, String> implements Subject {
+public  class JSONParser extends AsyncTask<Void, Void, String> implements Subject {
          private ArrayList<Observer> observers;
          public static String LOG_TAG = "my_log";
          HttpURLConnection urlConnection = null;
