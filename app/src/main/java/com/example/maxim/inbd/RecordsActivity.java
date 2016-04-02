@@ -18,7 +18,7 @@ public class RecordsActivity extends AppCompatActivity {
         textView=(TextView)findViewById(R.id.textView5);
         int falseWord=countWord-countWordTrue;
         int proc=falseWord*100/countWord;
-        textView.setText("Слов потренировано "+countWord+", правильных ответов "+countWordTrue+"\n  Процент неправильных ответов: "+proc);
+        textView.setText("Слов потренировано "+countWord+", правильных ответов  "+countWordTrue+"\n  Процент неправильных ответов: "+proc);
     }
     @Override
     public void onBackPressed() {
