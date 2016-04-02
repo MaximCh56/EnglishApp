@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.maxim.inbd.AddWordActivity"
+    android:background="@drawable/background_game">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/Button1Word"
+        android:onClick="onevariant"
+        android:background="#00ffffff"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ButtonStopGame"
+        android:layout_toStartOf="@+id/ButtonStopGame"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/Button2Word"
+        android:onClick="twovariant"
+        android:background="#00ffffff"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/Button1Word"
+        android:layout_toRightOf="@+id/ButtonStopGame"
+        android:layout_toEndOf="@+id/ButtonStopGame"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="стоп"
+        android:id="@+id/ButtonStopGame"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopGame" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="101dp"
+        android:layout_alignLeft="@+id/ButtonStopGame"
+        android:layout_alignStart="@+id/ButtonStopGame"
+        android:layout_toLeftOf="@+id/Button2Word"
+        android:layout_toStartOf="@+id/Button2Word" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
