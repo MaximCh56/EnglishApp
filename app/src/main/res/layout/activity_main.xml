@@ -16,10 +16,9 @@
         android:background="#00ffffff"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:layout_marginBottom="27dp"
+        android:textStyle="italic"
         android:layout_above="@+id/button7"
-        android:layout_centerHorizontal="true"
-        android:textStyle="italic" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -30,10 +29,9 @@
         android:background="#00ffffff"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:layout_marginBottom="31dp"
+        android:textStyle="italic"
         android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:textStyle="italic" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,17 +42,22 @@
         android:background="#00ffffff"
         android:textColor="#ffffff"
         android:textSize="25dp"
+        android:textStyle="italic"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="italic" />
+        android:layout_marginBottom="28dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="онлайн тренировка"
         android:id="@+id/button4"
+        android:onClick="proverka"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:background="#00ffffff"
+        android:textColor="#ffffff"
         android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="104dp"
-        android:onClick="proverka" />
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 </RelativeLayout>

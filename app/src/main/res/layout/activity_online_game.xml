@@ -15,7 +15,10 @@
         android:id="@+id/OnlineGamebutton1"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="OnlineGamebutton1" />
+        android:onClick="OnlineGamebutton1"
+        android:background="#00ffffff"
+        android:textSize="15dp"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,7 +28,10 @@
         android:layout_marginTop="41dp"
         android:onClick="OnlineGamebutton2"
         android:layout_below="@+id/OnlineGamebutton1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff"
+        android:textSize="15dp"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,15 +41,25 @@
         android:layout_marginTop="109dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp" />
+        android:textSize="22dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="стоп"
-        android:id="@+id/OnlineGameStop"
-        android:onClick="OnlineGameStop"
-        android:layout_alignParentBottom="true"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/OnlineGamebutton2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="стоп"
+            android:id="@+id/OnlineGameStop"
+            android:onClick="OnlineGameStop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 </RelativeLayout>
